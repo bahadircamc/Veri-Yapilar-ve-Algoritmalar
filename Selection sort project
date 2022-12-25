@@ -1,0 +1,30 @@
+1.
+[22,27,16,2,18,6] -> Ekleme Sıralaması
+  Yükselen dizini sıralama türüne göre aşamalarını ayrıntılandırın.
+  
+-[22,27,16,2,18,6] dizi 6 elemanlıdır. Bu 6 elemanlı dizin en küçük elemanı 1.sırada ki eleman ile yerini değiştiriyoruz ve yeni dzimiz [2,27,16,22,18,6] olmuş oldu. Artık ilk eleman yerinde sabit kalıcak ve geri kalan 5 eleman içinde en küçük olan 6 elemanı 2. sırayı ortaya koyuyoruz bu şekilde yeni dizimiz [2,6,16,22,18,27] olmuş oluyor....
+evet bu şekilde devam edersek, her işlemden sonra en küçük öğeyi bulmak için daha az öğe arasından seçim yaparak sıraladığımız dizi [2,6,16,18,22,27] olmuş oluyor.
+ 
+ 
+2.
+Big-O gösterimini korumasını sağlar.
+
+-Büyük-O=(n^2)
+
+
+3.
+Zaman araştırmaları: Dizi sıralandıktan sonra 18 sayı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+-Average case'e girer
+
+4.
+[7,3,5,8,2,9,4,15,6] dizisinin Seçimi Sıralama'ya göre ilk 4 adımını attı.
+
+1.adım: Dizideki en küçük eleman olan 2, dizindeki en başıdaki eleman ile yer değiştirir.
+  Yeni dizi [2,3,5,8,7,9,4,15,6] olur.
+2.adım: Dizideki en küçük eleman olan 3, dizi 2. eleman ile yer değiştirir.
+  Yeni dizi [2,3,5,8,7,9,4,15,6] olur.
+3.adım: Dizideki en küçük eleman olan 4, dizi 3. eleman ile yer değiştirir.
+  Yeni dizi [2,3,4,8,7,9,5,15,6] olur.
+4.adım: Dizideki en küçük eleman olan 5, dizi 4. eleman ile yer değiştirir.
+  Yeni dizi [2,3,4,5,7,9,8,15,6] olur ve diziler bu şekilde devam eder ve diziyi sıralamış kullanır.
