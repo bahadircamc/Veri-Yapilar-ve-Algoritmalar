@@ -3,10 +3,39 @@
 
 1.Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
 
-Adım 1: Diziyi 2'ye böl .
-  [][]
+Adım 1: Diziyi 2'ye böl.
+[16,21,11]  <---->  [8,12,22]
+
+Adım 2: 2 diziyide parçala.
+[16] - [21,11] <-----> [8] - [12,22]
+
+Adım 3: 
+[16] - [21]- [11]   <--->  [8] - [12] - [22]
+  
+Adım 4: sağ ve sol taraftaki diziler büyüklüklerine göre 3 elemanlı dizi halinde sırala.
+[11,16,21]   <--->  [8,12,22]
+
+Adım 5: Bu adımda birleştirmeye geçiyoruz ve bu işlem şöyle oluyor; sağdaki ve soldaki dizilerin her zaman 1. elemanlarını kıyaslıyoruz ve küçük olan
+elemanı yeni dizimize ekliyoruz, eklediğimiz elemanı aldığımız diziden çıkartmayı unutmamalıyız. Bu şekilde yeni dizimiz birleştirme sıralamasıyla 
+sıralanmış oalcaktır. Bu adımların devamı bu şekildedir:
+
+Adım 5:  [11,16,21] --- [8,12,22] ---> 8, 11'den küçüktür      ---> yeni dizinin ilk elemanı 8 olacaktır.                Yeni dizi  :  [8]
+Adım 6:  [11,16,21] --- [12,22]   ---> 11, 12' de küçüktür     ---> yeni dizinin 2. elamanı 11 olacaktır.                Yeni dizi  :  [8,11]
+Adım 7:  [16,21]    --- [12,22]   ---> 12, 16' dan kücüktür    ---> yeni dizinin 3. elamanı 12 olacaktır.                Yeni dizi  :  [8,11,12]
+Adım 8:  [16,21]    --- [22]      ---> 16, 22' den küçüktür    ---> yeni dizinin 4. elemanı 16 olacaktır.                Yeni dizi  :  [8,11,12,16]
+Adım 9:  [21]       --- [22]      ---> 21, 22' den küçüktür    ---> yeni dizinin 5. elemanı 21, 6. elemanı 22 olacaktır. Yeni dizi  :  [8,11,12,16,21,22]
+
 
 
 
 
 2.Big-O gösterimini yazınız.
+
+---> Bu algoritmanın Big-O temsili O(n log n)'dir çünkü dizinin bölünmesi ve birleştirilmesi her bir öğe için logaritmik bir zaman alır.
+
+
+
+
+
+
+
