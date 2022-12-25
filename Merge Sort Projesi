@@ -1,0 +1,12 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+
+1.Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+Adım 1: Diziyi 2'ye böl .
+  [][]
+
+
+
+
+2.Big-O gösterimini yazınız.
